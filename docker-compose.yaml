@@ -1,0 +1,32 @@
+services:
+  codesage:
+    build: ./codesage
+    container_name: codesage
+    ports:
+      - "8081:8081"
+    networks:
+      - ai-net
+    restart: unless-stopped
+
+  ai-reviewer:
+    build: ./AI_code_reviewer
+    container_name: ai-reviewer
+    depends_on:
+      - codesage
+    environment:
+      GITLAB_BASE_URL: "https://gitlab.com"
+      GITLAB_TOKEN: "${GITLAB_TOKEN}"
+      GITLAB_WEBHOOK_SECRET: "${GITLAB_WEBHOOK_SECRET}"
+      PORT: "8080"
+      CODESAGE_URL: "http://codesage:8081/analyze"
+      LLAMA_URL: "http://host.docker.internal:11434/api/generate"
+
+    ports:
+      - "8080:8080"
+    networks:
+      - ai-net
+    restart: unless-stopped
+
+networks:
+  ai-net:
+    driver: bridge
