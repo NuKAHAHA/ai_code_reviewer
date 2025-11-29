@@ -129,11 +129,17 @@ CodeSage: сервис для статического анализа Go-код�
 
 
 ## TeamPlay:
+
 **Нурдаулет Хаймульдин - Go BackEnd Developer**
+
 **Бакеев Аскар - MLOps Engineer https://askarbakeyev-248376.gitlab.io/**
+
 **Жания Жакипова - Go BackEnd Developer**
+
 **Максат Макашев - Project Manager**
 
 ## Check our GitHubs:
+
 https://github.com/askarrrr04
+
 https://github.com/NuKAHAHA
