@@ -126,3 +126,14 @@ CodeSage: сервис для статического анализа Go-код�
 
 **ngrok http 8080
 Это создаст публичный URL, который будет перенаправлять трафик на ваш локальный сервер.**
+
+
+## TeamPlay:
+**Нурдаулет Хаймульдин - Go BackEnd Developer**
+**Бакеев Аскар - MLOps Engineer https://askarbakeyev-248376.gitlab.io/**
+**Жания Жакипова - Go BackEnd Developer**
+**Максат Макашев - Project Manager**
+
+## Check our GitHubs:
+https://github.com/askarrrr04
+https://github.com/NuKAHAHA
